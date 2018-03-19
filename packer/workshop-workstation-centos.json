@@ -1,0 +1,27 @@
+{
+  "builders": [{
+    "type": "amazon-ebs",
+    "ssh_pty": true,
+    "access_key": "{{user `aws_access_key`}}",
+    "secret_key": "{{user `aws_secret_key`}}",
+    "region": "us-west-2",
+    "instance_type": "m3.medium",
+    "source_ami_filter": {
+      "filters": {
+        "virtualization-type": "hvm",
+        "name": "CentOS Linux 7 x86_64 *"
+      },
+      "owners": ["679593333241"],
+      "most_recent": true
+    },
+    "ssh_username": "centos",
+    "ami_users": ["112758395563", "496323866215"],
+    "ami_name": "Habitat Workshop Workstation - CentOS 7 - v0.1"
+  }],
+
+  "provisioners": [{
+    "type": "chef-solo",
+    "cookbook_paths": ["vendored_cookbooks"],
+    "run_list": ["workstations::centos"]
+  }]
+}
