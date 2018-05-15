@@ -150,22 +150,6 @@ execute "chown root:dockerroot /var/run/docker.sock" do
 end
 
 #
-# Install Habitat
-# 
-hab_install 'Install Habitat' do
-  channel 'stable'
-  create_user false
-end
-
-#
-# Install Habitat Supervisor, Studio, and Docker Exporter
-# 
-hab_package 'core/hab-sup'
-hab_package 'core/hab-studio'
-hab_package 'core/hab-backline'
-hab_package 'core/hab-pkg-export-docker'
-
-#
 # Write out some workshop solutions in a "hidden" directory in case
 # some participants have trouble typing out the recipe/template/kitchen
 # files correctly, or if you're simply running behind on time.

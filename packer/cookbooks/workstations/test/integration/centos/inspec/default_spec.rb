@@ -38,30 +38,6 @@ describe file('/etc/chef/ohai/hints/ec2.json') do
   its('content') { should match /{}/ }
 end
 
-describe command('hab --help') do
-  its('exit_status') { should eq 0 }
-end
-
-describe command('hab pkg provides hab-sup') do
-  its('exit_status') { should eq 0 }
-  its('stdout') { should match %r{core/hab-sup} }
-end
-
-describe command('hab pkg provides hab-studio') do
-  its('exit_status') { should eq 0 }
-  its('stdout') { should match %r{core/hab-studio} }
-end
-
-describe command('hab pkg provides hab-pkg-export-docker') do
-  its('exit_status') { should eq 0 }
-  its('stdout') { should match %r{core/hab-pkg-export-docker} } 
-end
-
-describe directory("/hab/pkgs/core/hab-backline") do
-  it { should exist }
-end
-
-
 describe package('vim-enhanced') do
   it { should be_installed }
 end
