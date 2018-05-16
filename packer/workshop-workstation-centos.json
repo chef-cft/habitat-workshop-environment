@@ -16,7 +16,7 @@
     },
     "ssh_username": "centos",
     "ami_users": ["112758395563", "496323866215"],
-    "ami_name": "Habitat Workshop Workstation - CentOS 7 - v0.1"
+    "ami_name": "Habitat Workshop Workstation - CentOS 7 - v0.2 - {{isotime | clean_ami_name}}"
   }],
 
   "provisioners": [{
