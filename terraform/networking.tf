@@ -32,6 +32,18 @@ module "security_group" {
 
   ingress_with_cidr_blocks = [
     {
+      from_port   = 8000
+      to_port     = 8000
+      protocol    = "tcp"
+      cidr_blocks = "0.0.0.0/0"
+    },
+    {
+      from_port   = 8085
+      to_port     = 8085
+      protocol    = "tcp"
+      cidr_blocks = "0.0.0.0/0"
+    },
+    {
       from_port   = 9631
       to_port     = 9631
       protocol    = "tcp"

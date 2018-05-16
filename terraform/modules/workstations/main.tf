@@ -46,6 +46,7 @@ resource "aws_instance" "workstation" {
 
   root_block_device {
     delete_on_termination = true
+    volume_size = 20
   }
 
   connection {
