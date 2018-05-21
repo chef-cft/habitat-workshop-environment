@@ -67,6 +67,17 @@ user "hab" do
 end
 
 #
+# Set up the hab users bash profile
+# 
+# This adds a colorized git prompt to show what git branch the user is on
+# 
+cookbook_file "/home/hab/.bash_profile" do 
+  source "bash_profile"
+  owner "hab"
+  group "hab"
+end 
+
+#
 # Allow the "hab" user passwordless sudo
 #
 sudo "hab" do
