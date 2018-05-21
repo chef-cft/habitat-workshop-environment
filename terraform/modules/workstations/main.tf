@@ -40,7 +40,7 @@ resource "aws_instance" "workstation" {
   count                  = "${var.count}"
   ami                    = "${var.workstation_ami}"
   key_name               = "${var.aws_sshkey}"
-  instance_type          = "t2.micro"
+  instance_type          = "c5.large"
   subnet_id              = "${var.workstation_vpc}"
   vpc_security_group_ids = ["${var.workstation_security_group}"]
 
