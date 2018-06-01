@@ -43,7 +43,7 @@ After all workstations have been generated then you can have the enjoyment of pu
 
 ### Example output:
 
-> ``bundle exec carpenter build kkw-hab-new2`      
+> `bundle exec carpenter build kkw-hab-new2`      
 > 1. chef-aws
 > 2. chef-engineering
 > 3. chef-sa-group
@@ -59,8 +59,6 @@ After all workstations have been generated then you can have the enjoyment of pu
 
 > Login password for workstations: chefhab1!  
 > Number of workstations: 1  
-
-Note!! Number of workstations you request should == # of students + yourself + a couple spare just in case
 
 > Card deck color: |blue| red  
 > Email, without the chef.io (i.e. adamleff): |kkwentus|  
