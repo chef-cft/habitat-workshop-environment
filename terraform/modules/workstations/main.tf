@@ -40,7 +40,7 @@ resource "aws_instance" "workstation" {
   count                  = "${var.count}"
   ami                    = "${var.workstation_ami}"
   key_name               = "${var.aws_sshkey}"
-  instance_type          = "c5.large"
+  instance_type          = "t2.large"
   subnet_id              = "${var.workstation_vpc}"
   vpc_security_group_ids = ["${var.workstation_security_group}"]
 
@@ -52,7 +52,7 @@ resource "aws_instance" "workstation" {
   connection {
     type = "ssh"
     user = "centos"
-    timeout = "2m"
+    timeout = "7m"
     agent = true
   }
 

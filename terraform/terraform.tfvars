@@ -1,0 +1,12 @@
+aws_key_pair_file = "/Users/kkwentus/.ssh/kkw2-sa-west.pem"
+aws_sshkey = "kkw2-sa-west"
+aws_profile = "default"
+aws_region = "us-west-2"
+contact_tag = "SA Group"
+deck_color_1 = "red"
+deck_color_2 = "blue"
+dns_zone = "sa.chefdemo.net"
+total_workstations = 1
+workshop_prefix = "SA-HAB"
+workstation_ami = "ami-f281fe8a"
+workstation_login_password = "chefhab1!"
