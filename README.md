@@ -41,7 +41,11 @@ This program is setup to label workstations for workshop students. When it runs 
 
 After all workstations have been generated then you can have the enjoyment of putting the name/IP info into a gist for the students to access.
 
-### Example output:
+### Example usage:
+> `bundle install`
+>......  
+> Bundle complete! 1 Gemfile dependency, 16 gems now installed.  
+> Use `bundle info [gemname]` to see where a bundled gem is installed.
 
 > `bundle exec carpenter build kkw-hab-new2`      
 > 1. chef-aws
