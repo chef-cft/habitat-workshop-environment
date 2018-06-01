@@ -42,10 +42,10 @@ This program is setup to label workstations for workshop students. When it runs 
 After all workstations have been generated then you can have the enjoyment of putting the name/IP info into a gist for the students to access.
 
 ### Example usage:
-> `bundle install`
->......  
+> `bundle install`  
+> ......  
 > Bundle complete! 1 Gemfile dependency, 16 gems now installed.  
-> Use `bundle info [gemname]` to see where a bundled gem is installed.
+> Use bundle info [gemname] to see where a bundled gem is installed.
 
 > `bundle exec carpenter build kkw-hab-new2`      
 > 1. chef-aws
@@ -68,7 +68,7 @@ After all workstations have been generated then you can have the enjoyment of pu
 > Email, without the chef.io (i.e. adamleff): |kkwentus|  
 > The following configuration will be used:  
 
->`<BUNCH OF STUFF HAPPENS>`  
+> ......   
 
 > module.deck-1-heart-workstations.aws_instance.workstation (remote-exec):   SSH Agent: true    
 > module.deck-1-heart-workstations.aws_instance.workstation (remote-exec): Connected!
