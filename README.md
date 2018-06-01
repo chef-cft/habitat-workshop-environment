@@ -37,7 +37,7 @@ ex:
 
 ### Workstations labels /w colors & suits
 
-This program is setup to label workstations for workshop students. When it runs it will prompt you for a color and a # of workstations. You will then end up with Workstations in AWS us-west with names of 'workstation-red-hearts-02'.
+This program is setup to label workstations for workshop students. When it runs it will prompt you for a color and a # of workstations. You will then end up with Workstations in AWS us-west with names such as 'workstation-red-hearts-02'.
 
 After all workstations have been generated then you can have the enjoyment of putting the name/IP info into a gist for the students to access.
 
