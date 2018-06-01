@@ -12,7 +12,7 @@ This was last tested on version 0.11.3
 This was last tested on version 1.1.3
 
 ## Config updates
-* After cloning this repo, update `terraform/terraform.tfvars`         
+* After cloning this repo, locally update `terraform/terraform.tfvars` with your         
         -aws_key_pair_file  
         -aws_sshkey  
         -workshop_prefix (if you want)    
