@@ -8,6 +8,9 @@ This repository is based on the Compliance Workshop Environment, and relies on t
 * If you haven't already, you will need Terraform installed.
 This was last tested on version 0.11.3
 
+* If you haven't already, you will need Packer installed.
+This was last tested on version 1.1.3
+
 ## Config updates
 * After cloning this repo, update `terraform/terraform.tfvars`         
         -aws_key_pair_file  
@@ -32,10 +35,13 @@ ex:
     If you want to get rid of that build:  
     `bundle exec carpenter destroy GM_HAB_WRKSHP`
 
+### Workstations labels /w colors & suits
 
+This program is setup to label workstations for workshop students. When it runs it will prompt you for a color and a # of workstations. You will then end up with Workstations in AWS us-west with names of 'workstation-red-hearts-02'.
 
+After all workstations have been generated then you can have the enjoyment of putting the name/IP info into a gist for the students to access.
 
-Example output:
+### Example output:
 
 > ``bundle exec carpenter build kkw-hab-new2`      
 > 1. chef-aws
