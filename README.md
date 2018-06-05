@@ -11,21 +11,25 @@ This was last tested on version 0.11.3
 * If you haven't already, you will need Packer installed.
 This was last tested on version 1.1.3
 
-## Config updates
-* After cloning this repo, locally update `terraform/terraform.tfvars` with your         
-        -aws_key_pair_file  
-        -aws_sshkey  
-        -workshop_prefix (if you want)    
-        -workstation_login_password (if you want)  
+To see what ssh-agent keys you have setup run:
+`ssh-add -l`
 
-Note AMIS do expire, so if its been a while and the AMI in the tfvars is no longer valid, go and make a copy into a new one.  
+If you don't see your AWS key then add it:
+`ssh-add <aws_key>`
+ex: `ssh-add ~/.ssh/kkw2-sa-west.pem`
+
+## Config updates
+
 Name of current valid AMI as of 6/1/18:
 * ami-f281fe8a / Habitat Workshop Workstation - CentOS 7 - v0.3 - 2018-05-21T15-09-09Z
 
+AMIS do expire, so if its been a while and the AMI in the tfvars is no longer valid, go and make a copy into a new one and update this README  
+
 
 ## Launching instances
+Assuming `ssh-add -l` includes your aws_key
 
-Post config, from the root directory of this repo, to generate an environment:
+From the root directory of this repo, to generate an environment:
 
 * bundle install 
 * bundle exec carpenter build `<ENVNAME>`  
