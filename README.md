@@ -23,8 +23,7 @@ ex: `ssh-add ~/.ssh/kkw2-sa-west.pem`
 Name of current valid AMI as of 6/1/18:
 * ami-f281fe8a / Habitat Workshop Workstation - CentOS 7 - v0.3 - 2018-05-21T15-09-09Z
 
-AMIS do expire, so if its been a while and the AMI in the tfvars is no longer valid, go and make a copy into a new one and update this README  
-
+AMIs do expire, so if its been a while and the AMI in the workstation.tf is no longer valid, go into EC2, and make a copy into a new one.  Then please update the .tf file and this README.
 
 ## Launching instances
 Assuming `ssh-add -l` includes your aws_key
