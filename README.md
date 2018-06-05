@@ -11,12 +11,12 @@ This was last tested on version 0.11.3
 * If you haven't already, you will need Packer installed.
 This was last tested on version 1.1.3
 
-To see what ssh-agent keys you have setup run:
-`ssh-add -l`
+* Ensure your ssh-agent is configured for your aws_key  
+    `ssh-add -l`  
 
-If you don't see your AWS key then add it:
-`ssh-add <aws_key>`
-ex: `ssh-add ~/.ssh/kkw2-sa-west.pem`
+    If you don't see your AWS key then add it:  
+    `ssh-add <aws_key>`  
+     ex: `ssh-add ~/.ssh/kkw2-sa-west.pem`  
 
 ## Config updates
 
