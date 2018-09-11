@@ -13,7 +13,7 @@ security_group_id = "sg-768b5f0a"
 dns_zone = "eng.chefdemo.net."
 
 [[aws_accounts]]
-name = "chef-sa-group"
+name = "solutions-architects"
 workstation_ami_id = "ami-f281fe8a"
 automate_ami_id = "ami-d2c924b2"
 security_group_id = "sg-9ea276e2"
